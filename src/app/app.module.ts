@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './ui/navbar/navbar.component';
+import { FooterComponent } from './ui/footer/footer.component';
+import { LayoutComponent } from './ui/layout/layout.component';
 import { AuthComponent } from './auth/auth.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SignupComponentComponent } from './signup-component/signup-component.component';
@@ -13,6 +16,9 @@ import { StudentLoginComponent } from './auth/student-login/student-login.compon
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    LayoutComponent,
     AuthComponent,
     EmployerLoginComponent,
     StudentLoginComponent,
@@ -20,7 +26,7 @@ import { StudentLoginComponent } from './auth/student-login/student-login.compon
   imports: [
     BrowserModule,
     SharedModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
     SignupComponentComponent
   ],
   imports: [
