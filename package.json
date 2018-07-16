@@ -1,6 +1,7 @@
 {
   "name": "efajobclient",
   "version": "0.0.0",
+  "description": "Client fo EFA Job Board",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
