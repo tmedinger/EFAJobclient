@@ -1,4 +1,4 @@
-import { SharedRoutingModule } from '../shared/shared-routing.module';
+import { SharedRoutingModule } from './shared-routing.module';
 
 /*describe('SharedRoutingModule', () => {
   let sharedRoutingModule: SharedRoutingModule;
