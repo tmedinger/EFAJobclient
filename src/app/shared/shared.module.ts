@@ -67,6 +67,7 @@ import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
     MatTooltipModule,
 
   ],
-  declarations: []
+  declarations: [],
+  exports: []
 })
 export class SharedModule { }
