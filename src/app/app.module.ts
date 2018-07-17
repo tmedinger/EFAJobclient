@@ -16,6 +16,7 @@ import { StudentSignupComponent } from './auth/student-signup/student-signup.com
 import { EmployerModule } from './employer/employer.module';
 import { NotificationsComponent } from './student/student-dashboard/notifications/notifications.component';
 import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applied.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applie
     EmployerSignupComponent,
     StudentSignupComponent,
     NotificationsComponent,
-    JobsAppliedComponent
+    JobsAppliedComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     EmployerModule,
