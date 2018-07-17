@@ -37,6 +37,7 @@ import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applie
     SharedModule,
     ReactiveFormsModule,
     AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
