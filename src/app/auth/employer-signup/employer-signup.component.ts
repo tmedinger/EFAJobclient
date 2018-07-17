@@ -14,8 +14,7 @@ export class EmployerSignupComponent implements OnInit {
 
   ngOnInit() {
     this.myForm = this.fb.group({
-      First_name: '',
-      Last_Name: '',
+      Username: '',
       Email: '',
       Password: '',
     })

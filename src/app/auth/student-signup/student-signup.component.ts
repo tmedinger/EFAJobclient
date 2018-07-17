@@ -14,8 +14,7 @@ export class StudentSignupComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
   ngOnInit() {
     this.myForm = this.fb.group({
-      First_name: '',
-      Last_Name: '',
+      Username: '',
       Email: '',
       Password: '',
     })
