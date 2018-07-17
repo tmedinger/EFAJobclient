@@ -1,9 +1,10 @@
 @import '~@angular/material/theming';
 @include mat-core();
-$job-app-primary: mat-palette($mat-red);
-$job-app-accent:  mat-palette($mat-red, A200, A100, A400);
+$job-app-primary: mat-palette($mat-red,950,850,150);
+$job-app-secondary: mat-palette($mat-blue,150,75,750);
+$job-app-accent: mat-pallette($mat-deep-purple, 750, 950, 999);
 
 $job-app-warn: mat-palette($mat-red);
-$job-app-theme: mat-light-theme($job-app-primary, $job-app-accent, $job-app-warn);
+$job-app-theme: mat-light-theme($job-app-primary, $job-app-secondary, $job-app-warn);
 
 @include angular-material-theme($job-app-theme);
