@@ -19,6 +19,9 @@ import { MatButtonModule,
         MatTableModule,
         MatToolbarModule,
         MatTooltipModule, } from "@angular/material";
+import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
+import { JobDetailsComponent } from './job-details/job-details.component';
+import { PipePipe } from './pipe.pipe';
 
 @NgModule({
   imports: [
@@ -42,6 +45,7 @@ import { MatButtonModule,
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
+    ReactiveFormsModule
   ],
 
   exports: [
@@ -65,6 +69,6 @@ import { MatButtonModule,
     MatTooltipModule,
 
   ],
-  declarations: []
+  declarations: [JobDetailsComponent, PipePipe]
 })
 export class SharedModule { }
