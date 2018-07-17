@@ -5,14 +5,12 @@
   <hr>
 <div>
   <mat-form-field>
-      <label>username:</label>
     <input matInput placeholder="username" formControllName="username">
     <mat-error *ngIf="username.invalid && username.touched">
       username is invalid
     </mat-error>
   </mat-form-field>
   <mat-form-field>
-      <label>password:</label>
     <input matInput placeholder="password" formControllName="password">
     <mat-error *ngIf="password.invalid && password.touched">
       password is invalid

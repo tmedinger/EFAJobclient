@@ -68,6 +68,5 @@ import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 
   ],
   declarations: [],
-  exports: []
 })
 export class SharedModule { }
