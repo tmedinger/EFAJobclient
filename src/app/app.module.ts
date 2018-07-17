@@ -29,7 +29,7 @@ import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applie
     EmployerSignupComponent,
     StudentSignupComponent,
     NotificationsComponent,
-    JobsAppliedComponent,
+    JobsAppliedComponent
   ],
   imports: [
     EmployerModule,
