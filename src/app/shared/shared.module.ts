@@ -22,6 +22,7 @@ import { MatButtonModule,
 
 import {FormBuilder, FormGroup} from '@angular/forms';
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
+import { JobDetailsComponent } from './job-details/job-details.component';
 
 import { EmployerSignupComponent } from '../auth/employer-signup/employer-signup.component';
 import { StudentSignupComponent } from '../auth/student-signup/student-signup.component';
@@ -78,7 +79,7 @@ import { SnippetPipe } from './snippet.pipe';
   declarations: [
     StudentSignupComponent,
     EmployerSignupComponent,
-    SnippetPipe]
-
+    SnippetPipe,
+    JobDetailsComponent]
 })
 export class SharedModule { }
