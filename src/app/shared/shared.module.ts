@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatButtonModule,
+import { 
+        MatButtonModule,
         MatCardModule,
         MatCheckboxModule,
         MatButtonToggleModule,
@@ -18,7 +19,8 @@ import { MatButtonModule,
         MatSlideToggleModule,
         MatTableModule,
         MatToolbarModule,
-        MatTooltipModule, } from "@angular/material";
+        MatTooltipModule,
+} from "@angular/material";
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 
 @NgModule({
