@@ -1,0 +1,53 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.elevenfiftylogo {
+    max-height: 48px;
+}
+
+.navbar {
+    height: 62px;
+    background-color: rgba(190, 190, 190, 0.753);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+}
+
+.navbar-space {
+    flex: 1 1 60%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* border: 1px solid black; */
+    line-height: 52px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-logo {
+    flex: 1 1 20%;
+    /* border: 1px solid black; */
+    line-height: 52px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-buttons {
+    flex: 1 1 20%;
+    /* border: 1px solid black; */
+    line-height: 52px;
+    display: inline-block;
+    vertical-align: middle;
+}
