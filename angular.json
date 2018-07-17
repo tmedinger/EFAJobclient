@@ -23,6 +23,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "src/Job-Theme.scss"
+              },
               "src/styles.css"
             ],
             "scripts": []
