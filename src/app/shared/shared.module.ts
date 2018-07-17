@@ -45,7 +45,8 @@ import { PipePipe } from './pipe.pipe';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ],
 
   exports: [

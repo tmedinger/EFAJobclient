@@ -1,0 +1,25 @@
+<div>
+  <form MatFormFieldModule [formGroup]="studentForm" (submit)="handleSubmit()">
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" formControlName="first_name">
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" formControlName="last_name">
+    <label for="email">Email:</label>
+    <input type="text" name="email" formControlName="email">
+    <label for="username">Username:</label>
+    <input type="text" name="username" formControlName="username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" formControlName="password">
+    <label for="linkToResume">Resume link:</label>
+    <input type="url" name="linkToResume" formControlName="linkToResume">
+    <label for="linkToPortfolio">Portfolio Link:</label>
+    <input type="url" name="linkToPortfolio" formControlName="linkToPortfolio">
+    <label for="linkToGitHub">Github link:</label>
+    <input type="url" name="linkToGitHub" formControlName="linkToGitHub">
+    <label for="linkToCodePen">Codepen Link:</label>
+    <input type="url" name="linkToCodePen" formControlName="linkToCodePen">
+    <label for="linkToProjects">Projects Link:</label>
+    <input type="url" name="linkToProjects" formControlName="linkToProjects">
+    <button type="submit">Submit</button>
+  </form>
+</div>
