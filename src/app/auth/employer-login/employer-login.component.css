@@ -1,0 +1,14 @@
+.employerCard{
+    height: 50%;
+    width: 30%;
+    margin-left: 33%;
+    margin-top: 5%;
+    align-content: center
+}
+.employerButtons{
+    margin-left:49%;
+    margin-bottom: 5%;
+}
+.employerButtons button{
+    margin: 1%;
+}
