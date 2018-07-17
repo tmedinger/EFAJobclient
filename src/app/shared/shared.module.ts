@@ -19,6 +19,7 @@ import { MatButtonModule,
         MatTableModule,
         MatToolbarModule,
         MatTooltipModule, } from "@angular/material";
+import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 
 @NgModule({
   imports: [
@@ -42,6 +43,7 @@ import { MatButtonModule,
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
+    ReactiveFormsModule
   ],
 
   exports: [
