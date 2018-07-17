@@ -1,15 +1,4 @@
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
-import { Routes, RouterModule } from '@angular/router';
-import { StudentLoginComponent } from './auth/student-login/student-login.component';
-import { EmployerLoginComponent } from './auth/employer-login/employer-login.component'
-
-const routes: Routes = [
-    { path: '', redirectTo: '/student-login', pathMatch: 'full' },
-    { path: 'student-login', component: StudentLoginComponent },
-    { path: 'employer-login', component: EmployerLoginComponent },
-  ];
-=======
 import { Route, RouterModule } from '@angular/router';
 
 import { AuthComponent } from './auth/auth.component';
@@ -36,7 +25,6 @@ const routes: Route[] = [
     {path: 'navbar', component: NavbarComponent},
     {path: '**', component: PageNotFoundComponent}    
 ];
->>>>>>> ed0fbe0aff4f936324ac8f0324bf8b7a3ec10fd4
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],

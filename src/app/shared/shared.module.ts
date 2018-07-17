@@ -69,10 +69,6 @@ import { PipePipe } from './pipe.pipe';
     MatTooltipModule,
 
   ],
-<<<<<<< HEAD
-  declarations: [],
-=======
   declarations: [JobDetailsComponent, PipePipe]
->>>>>>> ed0fbe0aff4f936324ac8f0324bf8b7a3ec10fd4
 })
 export class SharedModule { }

@@ -16,11 +16,7 @@ import { StudentSignupComponent } from './auth/student-signup/student-signup.com
 import { EmployerModule } from './employer/employer.module';
 import { NotificationsComponent } from './student/student-dashboard/notifications/notifications.component';
 import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applied.component';
-<<<<<<< HEAD
-import { StudentDashboardComponent } from './student-dashboard/student-dashboard/student-dashboard.component';
-=======
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
->>>>>>> a8362d8d6cab36c1a99be4522a763e531daf6f43
 
 @NgModule({
   declarations: [
@@ -35,23 +31,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     StudentSignupComponent,
     NotificationsComponent,
     JobsAppliedComponent,
-<<<<<<< HEAD
-    StudentDashboardComponent,
-=======
     PageNotFoundComponent,
->>>>>>> a8362d8d6cab36c1a99be4522a763e531daf6f43
   ],
   imports: [
     EmployerModule,
     BrowserModule,
     SharedModule,
     ReactiveFormsModule,
-<<<<<<< HEAD
-    AppRoutingModule,
-=======
     AppRoutingModule
     
->>>>>>> ed0fbe0aff4f936324ac8f0324bf8b7a3ec10fd4
   ],
   providers: [],
   bootstrap: [AppComponent]
