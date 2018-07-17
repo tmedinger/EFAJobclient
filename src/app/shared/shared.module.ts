@@ -19,7 +19,13 @@ import { MatButtonModule,
         MatTableModule,
         MatToolbarModule,
         MatTooltipModule, } from "@angular/material";
+
+import {FormBuilder, FormGroup} from '@angular/forms';
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
+
+import { EmployerSignupComponent } from '../auth/employer-signup/employer-signup.component';
+import { StudentSignupComponent } from '../auth/student-signup/student-signup.component';
+import { SnippetPipe } from './snippet.pipe';
 
 @NgModule({
   imports: [
@@ -43,7 +49,7 @@ import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
 
   exports: [
@@ -65,8 +71,14 @@ import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
+    StudentSignupComponent,
+    EmployerSignupComponent
 
   ],
-  declarations: []
+  declarations: [
+    StudentSignupComponent,
+    EmployerSignupComponent,
+    SnippetPipe]
+
 })
 export class SharedModule { }
