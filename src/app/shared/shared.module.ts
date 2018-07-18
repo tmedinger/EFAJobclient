@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatButtonModule,
+import { 
+        MatButtonModule,
         MatCardModule,
         MatCheckboxModule,
         MatButtonToggleModule,
@@ -19,7 +20,8 @@ import { MatButtonModule,
         MatTableModule,
         MatToolbarModule,
         MatTooltipModule,
-        MatError, } from "@angular/material";
+        MatError
+} from "@angular/material";
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 import { JobDetailsComponent } from './job-details/job-details.component';
 import { PipePipe } from './pipe.pipe';
