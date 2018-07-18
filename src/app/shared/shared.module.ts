@@ -20,7 +20,7 @@ import {
         MatTableModule,
         MatToolbarModule,
         MatTooltipModule,
-        MatError
+        
 } from "@angular/material";
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 import { JobDetailsComponent } from './job-details/job-details.component';
@@ -48,7 +48,6 @@ import { PipePipe } from './pipe.pipe';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatError,
     ReactiveFormsModule
   ],
 
@@ -71,7 +70,6 @@ import { PipePipe } from './pipe.pipe';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatError,
 
   ],
   declarations: [JobDetailsComponent, PipePipe]
