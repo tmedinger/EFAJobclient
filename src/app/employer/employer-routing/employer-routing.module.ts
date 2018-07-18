@@ -11,7 +11,11 @@ import { RouterModule, Routes } from '@angular/router'
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' }
 
+<<<<<<< HEAD
 >>>>>>> 28fda87f474aaccaa799698aea97eb97f756eb3e
+=======
+>>>>>>> beb868bbfa0cd80c25da901c427153fa09444dab
+>>>>>>> develop
 ];
 
 @NgModule({
