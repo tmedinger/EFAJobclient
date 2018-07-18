@@ -17,6 +17,8 @@ import { EmployerModule } from './employer/employer.module';
 import { NotificationsComponent } from './student/student-dashboard/notifications/notifications.component';
 import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applied.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { JobsEditComponent } from './employer/employer-dashboard/jobs-edit/jobs-edit.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +34,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     NotificationsComponent,
     JobsAppliedComponent,
     PageNotFoundComponent,
+    JobsEditComponent,
   ],
   imports: [
     EmployerModule,
     BrowserModule,
     SharedModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
     
   ],
   providers: [],
