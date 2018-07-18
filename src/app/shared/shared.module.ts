@@ -19,12 +19,16 @@ import {
         MatSlideToggleModule,
         MatTableModule,
         MatToolbarModule,
-        MatTooltipModule,
-        MatError
-} from "@angular/material";
+        MatTooltipModule, } from "@angular/material";
+import {FormBuilder, FormGroup} from '@angular/forms';
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 import { JobDetailsComponent } from './job-details/job-details.component';
-import { PipePipe } from './pipe.pipe';
+
+import { EmployerLoginComponent } from '../auth/employer-login/employer-login.component';
+import { StudentLoginComponent } from '../auth/student-login/student-login.component';
+import { EmployerSignupComponent } from '../auth/employer-signup/employer-signup.component';
+import { StudentSignupComponent } from '../auth/student-signup/student-signup.component';
+import { SnippetPipe } from './snippet.pipe';
 
 @NgModule({
   imports: [
@@ -48,8 +52,7 @@ import { PipePipe } from './pipe.pipe';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatError,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
 
   exports: [
@@ -71,9 +74,20 @@ import { PipePipe } from './pipe.pipe';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatError,
+    StudentSignupComponent,
+    EmployerSignupComponent,
+    StudentLoginComponent,
+    EmployerLoginComponent,
 
   ],
-  declarations: [JobDetailsComponent, PipePipe]
+  declarations: [
+    SnippetPipe,
+    JobDetailsComponent,
+    StudentSignupComponent,
+    EmployerSignupComponent,
+    StudentLoginComponent,
+    EmployerLoginComponent,
+    SnippetPipe,
+    JobDetailsComponent]
 })
 export class SharedModule { }
