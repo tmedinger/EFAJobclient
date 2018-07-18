@@ -53,6 +53,7 @@ import { SnippetPipe } from './snippet.pipe';
     MatToolbarModule,
     MatTooltipModule,
     ReactiveFormsModule,
+    ReactiveFormsModule
   ],
 
   exports: [
