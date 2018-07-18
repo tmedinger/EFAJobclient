@@ -19,6 +19,7 @@ import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applie
 import { StudentDashboardComponent } from './student/student-dashboard/student-dashboard/student-dashboard.component';
 import { ProfileFormComponent } from '../app/student/profile/profile-form/profile-form.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ApplyComponent } from './student/apply/apply.component'
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     StudentDashboardComponent,
     ProfileFormComponent,
     PageNotFoundComponent,
+    ApplyComponent
   ],
   imports: [
     EmployerModule,

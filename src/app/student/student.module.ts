@@ -4,17 +4,21 @@ import { StudentRoutingModule } from './student-routing/student-routing.module';
 import { ProfileFormComponent } from './profile/profile-form/profile-form.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard/student-dashboard.component';
 import {MatCardModule} from '@angular/material/card';
+import { ApplyComponent } from './apply/apply.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 @NgModule({
   imports: [
     CommonModule,
     MatCardModule,
-    StudentRoutingModule
+    StudentRoutingModule,
+    MatFormFieldModule
   ],
   
   declarations: [
     StudentDashboardComponent, 
-    ProfileFormComponent]
+    ProfileFormComponent, ApplyComponent]
 })
 export class StudentModule { }
