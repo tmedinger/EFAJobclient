@@ -13,9 +13,9 @@ import {MatCardModule} from '@angular/material/card';
     MatCardModule,
     StudentRoutingModule
   ],
-  declarations: [TeaserPipe,
-     StudentDashboardComponent,
+  declarations: [
     StudentDashboardComponent, 
-    ProfileFormComponent]
+    ProfileFormComponent,
+    TeaserPipe]
 })
 export class StudentModule { }

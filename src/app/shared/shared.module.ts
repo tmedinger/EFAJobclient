@@ -74,6 +74,10 @@ import { SnippetPipe } from './snippet.pipe';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
+    StudentSignupComponent,
+    EmployerSignupComponent,
+    StudentLoginComponent,
+    EmployerLoginComponent,
 
   ],
   declarations: [
@@ -82,6 +86,8 @@ import { SnippetPipe } from './snippet.pipe';
     StudentSignupComponent,
     EmployerSignupComponent,
     StudentLoginComponent,
-    EmployerLoginComponent]
+    EmployerLoginComponent,
+    SnippetPipe,
+    JobDetailsComponent]
 })
 export class SharedModule { }
