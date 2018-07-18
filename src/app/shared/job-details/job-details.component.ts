@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialogRef, MatDialogModule, MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-job-details',
@@ -20,10 +21,38 @@ export class JobDetailsComponent implements OnInit {
     public listOfApplicants: string[],
     public apply:boolean,
     public create:any,
-    public updated:any
+    public updated: any,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit() {
   }
 
+  applyToJob(): void {
+    const applyAlert = this.dialog.open(ApplyConfirmAlert, {
+      height: "200px",
+      width: "250px"
+    });
+  }
+
+}
+
+
+
+
+// Component for confirmation that job application has been sent
+
+@Component({
+  selector: 'apply-confirm-alert',
+  templateUrl: 'apply-confirm-alert.html',
+  styleUrls: ['./apply-confirm-alert.css']
+})
+export class ApplyConfirmAlert {
+
+  constructor(public applyAlert: MatDialogRef<ApplyConfirmAlert>) {}
+  
+  onOkClick(): void {
+    this.applyAlert.close();
+  }
+  
 }
