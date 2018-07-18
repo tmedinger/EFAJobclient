@@ -14,7 +14,6 @@ const routes: Route[] = [
     {path: 'employerdashboard', component: EmployerDashboardComponent},
     {path: 'jobdetails', component: JobDetailsComponent },
     {path: 'jobsapplied', component: JobsAppliedComponent},
-    {path: 'layout', component: LayoutComponent},
     {path: '**', component: PageNotFoundComponent}    
 ];
 
