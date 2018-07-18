@@ -19,7 +19,6 @@ import { MatButtonModule,
         MatTableModule,
         MatToolbarModule,
         MatTooltipModule, } from "@angular/material";
-
 import {FormBuilder, FormGroup} from '@angular/forms';
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 import { JobDetailsComponent } from './job-details/job-details.component';

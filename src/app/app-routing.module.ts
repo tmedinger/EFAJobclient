@@ -13,7 +13,7 @@ import { NavbarComponent } from './ui/navbar/navbar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 
 const routes: Route[] = [
-    {path: '', redirectTo: '/auth', pathMatch: 'full'},
+    {path: '', redirectTo: '/', pathMatch: 'full'},
     {path: 'auth', component: AuthComponent},
     {path: 'employerdashboard', component: EmployerDashboardComponent},
     {path: 'notification', component: NotificationComponent},
@@ -27,7 +27,7 @@ const routes: Route[] = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [/*RouterModule.forRoot(routes)*/],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
