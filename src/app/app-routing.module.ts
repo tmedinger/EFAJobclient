@@ -6,7 +6,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SharedRoutingModule } from './shared/shared-routing.module';
 
 const routes: Routes = [  
-    {path: '', redirectTo: 'auth', pathMatch: 'full'},
+    {path: '', redirectTo: '/studentlogin', pathMatch: 'full'},
     {path: 'auth', component: AuthComponent},
     {path: '**', component: PageNotFoundComponent}    
 ];
