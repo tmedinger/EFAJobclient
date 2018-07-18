@@ -7,7 +7,10 @@ export class TeaserPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
     let discTeaser = "";
-    return null;
+    if(discTeaser.length >= 150){
+      
+    }
+    return discTeaser;
   }
 
 }

@@ -1,10 +1,13 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({
-  name: 'snippet'
-})
+@Pipe({ name: 'snippet'})
+
   export class SnippetPipe implements PipeTransform {
-  transform(value: any, args?: any): any {
-    return null;
+  transform(value: string, args?: any): any {
+    let discTeaser = value;
+    if(discTeaser.length >= 150){
+      
+    }
+    return discTeaser;
   }
 }

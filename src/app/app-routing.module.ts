@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
-import { Route, RouterModule } from '@angular/router';
 import { StudentSignupComponent } from './auth/student-signup/student-signup.component'
 // import { AuthComponent } from './auth/auth.component';
+import { Route, Routes, RouterModule } from '@angular/router';
+
+import { AuthComponent } from './auth/auth.component';
 import { EmployerDashboardComponent } from './employer/employer-dashboard/employer-dashboard.component';
 import { NotificationComponent } from './employer/employer-dashboard/notification/notification.component';
 import { JobDetailsComponent } from './shared/job-details/job-details.component';
@@ -14,7 +16,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 const routes: Route[] = [
     {path: '', redirectTo: 'auth', pathMatch: 'full'},
-    {path: 'auth', component: StudentSignupComponent},
+    {path: 'auth', component: AuthComponent},
     {path: 'employerdashboard', component: EmployerDashboardComponent},
     {path: 'notification', component: NotificationComponent},
     {path: 'jobdetails', component: JobDetailsComponent },

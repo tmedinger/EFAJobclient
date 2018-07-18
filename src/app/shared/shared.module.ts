@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatButtonModule,
+import { 
+        MatButtonModule,
         MatCardModule,
         MatCheckboxModule,
         MatButtonToggleModule,
@@ -23,6 +24,8 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 import { JobDetailsComponent } from './job-details/job-details.component';
 
+import { EmployerLoginComponent } from '../auth/employer-login/employer-login.component';
+import { StudentLoginComponent } from '../auth/student-login/student-login.component';
 import { EmployerSignupComponent } from '../auth/employer-signup/employer-signup.component';
 import { StudentSignupComponent } from '../auth/student-signup/student-signup.component';
 import { SnippetPipe } from './snippet.pipe';
@@ -72,13 +75,17 @@ import { SnippetPipe } from './snippet.pipe';
     MatToolbarModule,
     MatTooltipModule,
     StudentSignupComponent,
-    EmployerSignupComponent
+    EmployerSignupComponent,
+    EmployerLoginComponent,
+    StudentLoginComponent
 
   ],
   declarations: [
+    SnippetPipe,
+    JobDetailsComponent,
     StudentSignupComponent,
     EmployerSignupComponent,
-    SnippetPipe,
-    JobDetailsComponent]
+    StudentLoginComponent,
+    EmployerLoginComponent]
 })
 export class SharedModule { }
