@@ -8,6 +8,8 @@ import { LayoutComponent } from './ui/layout/layout.component';
 import { AuthComponent } from './auth/auth.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
+import { FileSelectDirective } from 'ng2-file-upload';
+
 import { EmployerLoginComponent } from './auth/employer-login/employer-login.component';
 import { StudentLoginComponent } from './auth/student-login/student-login.component';
 import { headersToString } from '../../node_modules/@types/selenium-webdriver/http';
@@ -17,10 +19,12 @@ import { EmployerModule } from './employer/employer.module';
 import { NotificationsComponent } from './student/student-dashboard/notifications/notifications.component';
 import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applied.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProfileComponent} from './student/profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FileSelectDirective,
     NavbarComponent,
     FooterComponent,
     LayoutComponent,
@@ -32,6 +36,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     NotificationsComponent,
     JobsAppliedComponent,
     PageNotFoundComponent,
+    ProfileComponent,
   ],
   imports: [
     EmployerModule,
