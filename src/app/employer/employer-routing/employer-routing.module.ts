@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-const route = [ /* ROUTES WILL GO HERE */ ];
+import {JobDetailsComponent} from '../../shared/job-details/job-details.component'
+
+const route = [ /* ROUTES WILL GO HERE */ 
+{ path: 'job-details/:id', component: JobDetailsComponent}
+];
 
 @NgModule({
   imports: [
