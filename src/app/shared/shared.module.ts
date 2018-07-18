@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatButtonModule,
+import { 
+        MatButtonModule,
         MatCardModule,
         MatCheckboxModule,
         MatButtonToggleModule,
@@ -26,6 +27,8 @@ import { JobDetailsComponent } from './job-details/job-details.component';
 import { EmployerSignupComponent } from '../auth/employer-signup/employer-signup.component';
 import { StudentSignupComponent } from '../auth/student-signup/student-signup.component';
 import { SnippetPipe } from './snippet.pipe';
+import { StudentLoginComponent } from '../auth/student-login/student-login.component';
+import { EmployerLoginComponent } from '../auth/employer-login/employer-login.component';
 
 @NgModule({
   imports: [
@@ -78,6 +81,8 @@ import { SnippetPipe } from './snippet.pipe';
   declarations: [
     StudentSignupComponent,
     EmployerSignupComponent,
+    StudentLoginComponent,
+    EmployerLoginComponent,
     SnippetPipe,
     JobDetailsComponent]
 })
