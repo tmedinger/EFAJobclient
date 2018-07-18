@@ -53,7 +53,6 @@ import { SnippetPipe } from './snippet.pipe';
     MatToolbarModule,
     MatTooltipModule,
     ReactiveFormsModule,
-    ReactiveFormsModule
   ],
 
   exports: [
@@ -75,10 +74,6 @@ import { SnippetPipe } from './snippet.pipe';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    StudentSignupComponent,
-    EmployerSignupComponent,
-    EmployerLoginComponent,
-    StudentLoginComponent
 
   ],
   declarations: [
