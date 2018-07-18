@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms'
   styleUrls: ['./profile-form.component.css']
 })
 export class ProfileFormComponent implements OnInit {
+  
   studentForm = new FormGroup({
     first_name:new FormControl,
     last_name:new FormControl,
