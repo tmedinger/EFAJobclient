@@ -5,26 +5,25 @@
   <div>
     <mat-form-field>
       <input matInput placeholder="username" formControllName="username">
-      <mat-error *ngIf="username.invalid && username.touched">
+      <!-- <mat-error *ngIf="username.invalid && username.touched">
         username is invalid
-      </mat-error>
+      </mat-error> -->
     </mat-form-field>
     </div>
     <div>
     <mat-form-field>
       <input matInput placeholder="password" formControllName="password">
-      <mat-error *ngIf="password.invalid && password.touched">
+      <!-- <mat-error *ngIf="password.invalid && password.touched">
         password is invalid
-      </mat-error>
+      </mat-error> -->
     </mat-form-field>
   </div>
   
   <!-- <button mat-raised-button [disabled]="employerForm.invalid" color="primary">Submit</button> -->
   <div class="studentButtons">
   <button mat-raised-button [disabled]="studentForm.invalid" color="primary">Submit</button>
-  <button mat-raised-button color="primary">Employer</button>
   <button mat-stroked-button  color="primary">Signup Here</button>
+  <button mat-raised-button color="primary" routerLink='/employerlogin'>Employer</button>
   </div>
-  
   </form>
   </mat-card>
