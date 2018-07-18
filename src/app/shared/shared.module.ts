@@ -75,7 +75,9 @@ import { EmployerLoginComponent } from '../auth/employer-login/employer-login.co
     MatToolbarModule,
     MatTooltipModule,
     StudentSignupComponent,
-    EmployerSignupComponent
+    EmployerSignupComponent,
+    StudentLoginComponent,
+    EmployerLoginComponent,
 
   ],
   declarations: [
