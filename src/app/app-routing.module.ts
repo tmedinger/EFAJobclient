@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Route, RouterModule } from '@angular/router';
+import { Route, RouterModule, Routes } from '@angular/router';
 import { StudentSignupComponent } from './auth/student-signup/student-signup.component'
 // import { AuthComponent } from './auth/auth.component';
 import { EmployerDashboardComponent } from './employer/employer-dashboard/employer-dashboard.component';
@@ -12,7 +12,7 @@ import { LayoutComponent } from './ui/layout/layout.component';
 import { NavbarComponent } from './ui/navbar/navbar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 
-const routes: Route[] = [
+const routes: Routes = [
     {path: '', redirectTo: 'auth', pathMatch: 'full'},
     {path: 'auth', component: StudentSignupComponent},
     {path: 'employerdashboard', component: EmployerDashboardComponent},
