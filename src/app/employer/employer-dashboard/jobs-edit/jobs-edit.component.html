@@ -1,0 +1,34 @@
+
+<p>hello</p>
+
+<div>
+  <form MatFormFieldModule [formGroup]="job_edit_form">
+    <mat-form-field>
+    <label for="Job_role">Job Role:</label>
+    <input matInput type="text" name="Job_role"  formControlName="Job_role">
+    </mat-form-field>
+  
+    <table>
+    <mat-form-field>
+    <label for="Job_experience">Job Experience:</label>
+    <input type="text" name="Job_experience"  formControlName="Job_experience">
+    </mat-form-field>
+    </table>
+  
+    <mat-form-field>
+    <label for="Job_type">Job Type:</label>
+    <input type="text" name="Job_type"  formControlName="Job_type">
+    </mat-form-field>
+  
+    <mat-form-field>
+    <label for="Job_description">Job Description:</label>
+    <input type="text" name="Job_description"  formControlName="Job_description">
+    </mat-form-field>
+  
+    <mat-form-field>
+    <label for="Job_salary">Job Salary:</label>
+    <input type="text" name="Job_salary"  formControlName="Job_salary">
+    </mat-form-field>
+    <Button> Submit </Button>
+  </form> 
+  </div>

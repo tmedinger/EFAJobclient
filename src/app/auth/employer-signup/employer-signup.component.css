@@ -1,0 +1,12 @@
+.cardForSignup{
+    height: 50%;
+    width: 30%;
+    margin-left: 28%;
+    margin-top: 5%;
+}
+.matButton-signup-card-signup{
+    margin-left: 49%;
+    margin-bottom: 10%;
+}.matButton-signup-card-signup button{
+    margin: 1%
+}
