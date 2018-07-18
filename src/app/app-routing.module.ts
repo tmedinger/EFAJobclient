@@ -24,7 +24,6 @@ const routes: Route[] = [
     {path: 'layout', component: LayoutComponent},
     {path: 'navbar', component: NavbarComponent},
     {path: '**', component: PageNotFoundComponent}    
-
 ];
 
 @NgModule({
