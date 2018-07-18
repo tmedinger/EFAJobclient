@@ -11,13 +11,12 @@ export class JobService {
 
 
   getJobs() {
-    return this.http.get(`http://localhost:4200/jobs`);
+    return this.http.get(`http://localhost:3000/jobs`);
   }
 
   addJob(newJob) {
     var headers = new Headers();
-    
     headers.append('Content-Type', 'application/json');
-    return this.http.post(`http://localhost:4200/addjob`, newJob,{headers: headers})
+    return this.http.post(`http://localhost:3000/addjob`, newJob, {headers: headers})
   }
 }
