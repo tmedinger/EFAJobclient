@@ -38,7 +38,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     SharedModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
     
   ],
   providers: [],

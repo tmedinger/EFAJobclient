@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
-import { JobDetailsComponent } from './job-details/job-details.component';
+import { JobDetailsComponent, ApplyConfirmAlert } from './job-details/job-details.component';
 import { PipePipe } from './pipe.pipe';
 import { 
         MatButtonModule,
@@ -47,7 +47,7 @@ import {
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
 
   exports: [
@@ -69,8 +69,10 @@ import {
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-
+    JobDetailsComponent,
   ],
-  declarations: [JobDetailsComponent, PipePipe]
+
+  entryComponents: [ApplyConfirmAlert],
+  declarations: [JobDetailsComponent, ApplyConfirmAlert, PipePipe]
 })
 export class SharedModule { }
