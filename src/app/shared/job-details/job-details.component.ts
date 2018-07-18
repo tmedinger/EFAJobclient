@@ -6,8 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job-details.component.css']
 })
 export class JobDetailsComponent implements OnInit {
+  
 
-  constructor() { }
+
+  constructor(
+    public jobName:string,
+    public companyName:string,
+    public jobDescription:string,
+    public salary: number,
+    public experience: string,
+    public jobType: string,
+    public datePosted: string,
+    public listOfApplicants: string[],
+    public apply:boolean,
+    public create:any,
+    public updated:any
+  ) { }
 
   ngOnInit() {
   }
