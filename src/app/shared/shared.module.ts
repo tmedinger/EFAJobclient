@@ -23,7 +23,7 @@ import {
         MatTableModule,
         MatToolbarModule,
         MatTooltipModule,
-        MatError, } from "@angular/material";
+      } from "@angular/material";
 
 @NgModule({
   imports: [
@@ -47,7 +47,6 @@ import {
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatError,
     ReactiveFormsModule
   ],
 
@@ -70,7 +69,6 @@ import {
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatError,
 
   ],
   declarations: [JobDetailsComponent, PipePipe]
