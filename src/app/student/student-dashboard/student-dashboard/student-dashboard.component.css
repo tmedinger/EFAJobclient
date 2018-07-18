@@ -1,0 +1,17 @@
+#jobCard {
+    width: 75%;
+    float: right   
+}
+mat-card-header {
+    display: block
+}
+
+mat-card-header p {
+    display: inline;
+    padding: 2%;
+}
+
+p {
+    display: inline;
+    padding: 5%
+}
