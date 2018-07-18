@@ -1,6 +1,6 @@
-import { SharedRoutingModule } from './shared-routing.module';
+ import { SharedRoutingModule } from './shared-routing.module';
 
-/*describe('SharedRoutingModule', () => {
+describe('SharedRoutingModule', () => {
   let sharedRoutingModule: SharedRoutingModule;
 
   beforeEach(() => {
@@ -10,4 +10,4 @@ import { SharedRoutingModule } from './shared-routing.module';
   it('should create an instance', () => {
     expect(sharedRoutingModule).toBeTruthy();
   });
-});*/
+});

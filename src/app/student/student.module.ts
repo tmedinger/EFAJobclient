@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StudentRoutingModule } from './student-routing/student-routing.module';
+import { TeaserPipe } from './teaser.pipe';
 import { ProfileFormComponent } from './profile/profile-form/profile-form.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard/student-dashboard.component';
 import {MatCardModule} from '@angular/material/card';
@@ -12,9 +13,9 @@ import {MatCardModule} from '@angular/material/card';
     MatCardModule,
     StudentRoutingModule
   ],
-  
   declarations: [
     StudentDashboardComponent, 
-    ProfileFormComponent]
+    ProfileFormComponent,
+    TeaserPipe]
 })
 export class StudentModule { }
