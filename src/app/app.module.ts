@@ -16,6 +16,8 @@ import { StudentSignupComponent } from './auth/student-signup/student-signup.com
 import { EmployerModule } from './employer/employer.module';
 import { NotificationsComponent } from './student/student-dashboard/notifications/notifications.component';
 import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applied.component';
+import { StudentDashboardComponent } from './student/student-dashboard/student-dashboard/student-dashboard.component';
+import { ProfileFormComponent } from '../app/student/profile/profile-form/profile-form.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
@@ -31,6 +33,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     StudentSignupComponent,
     NotificationsComponent,
     JobsAppliedComponent,
+    StudentDashboardComponent,
+    ProfileFormComponent,
     PageNotFoundComponent,
   ],
   imports: [
