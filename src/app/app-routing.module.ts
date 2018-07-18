@@ -7,6 +7,7 @@ import { JobDetailsComponent } from './shared/job-details/job-details.component'
 import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applied.component';
 import { LayoutComponent } from './ui/layout/layout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { ProfileFormComponent } from './student/profile/profile-form/profile-form.component';
 
 const routes: Route[] = [
     {path: 'auth', component: AuthComponent},
@@ -14,7 +15,9 @@ const routes: Route[] = [
     {path: 'employerdashboard', component: EmployerDashboardComponent},
     {path: 'jobdetails', component: JobDetailsComponent },
     {path: 'jobsapplied', component: JobsAppliedComponent},
-    {path: '**', component: PageNotFoundComponent}    
+    {path: 'profileform', component: ProfileFormComponent},
+    {path: '**', component: PageNotFoundComponent} 
+     
 ];
 
 @NgModule({

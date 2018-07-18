@@ -9,35 +9,39 @@ import { FormControl, FormGroup } from '@angular/forms'
 })
 export class ProfileFormComponent implements OnInit {
   
-  studentForm = new FormGroup({
+  student = new FormGroup({
     first_name:new FormControl,
     last_name:new FormControl,
     email:new FormControl,
     username:new FormControl,
     password:new FormControl,
     linkToResume:new FormControl,
+  })
+
+  social_media = new FormGroup({
     linkToPortfolio:new FormControl,
     linkToGitHub:new FormControl,
     linkToCodePen:new FormControl,
     linkToProjects:new FormControl,
   })
-  student:Student={
-    first_name:'',
-    last_name:'',
-    email:'',
-    username:'',
-    password:'',
-    linkToResume:'',
-    linkToPortfolio:'',
-    linkToGitHub:'',
-    linkToCodePen:'',
-    linkToProjects:[],
-  }
+
+  // student:Student={
+  //   first_name:'',
+  //   last_name:'',
+  //   email:'',
+  //   username:'',
+  //   password:'',
+  //   linkToResume:'',
+  //   linkToPortfolio:'',
+  //   linkToGitHub:'',
+  //   linkToCodePen:'',
+  //   linkToProjects:[],
+  // }
   constructor() { }
 
   ngOnInit() {
   }
 handleSubmit(){
-  console.log('submitted', this.studentForm)
+  console.log('submitted', this.student.value)
 }
 }
