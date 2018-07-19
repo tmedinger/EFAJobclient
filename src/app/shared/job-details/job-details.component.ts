@@ -7,19 +7,19 @@ import { MatDialogRef, MatDialogModule, MatDialog, MatCard, MatCardActions,MatCa
   styleUrls: ['./job-details.component.css']
 })
 export class JobDetailsComponent implements OnInit {
+  jobName: string
+  companyName:string
+  jobDescription:string
+   salary: number
+   experience: string
+   jobType: string
+   datePosted: string // TEMPORARY: HTML WILL CONTAIN {{datePosted | date:"MM/dd/yyyy"}}
+   listOfApplicants: string[]
+   apply:boolean
+   create:string
+  update: string
   
   constructor(
-    public jobName:string,
-    public companyName:string,
-    public jobDescription:string,
-    public salary: number,
-    public experience: string,
-    public jobType: string,
-    public datePosted: string, // TEMPORARY: HTML WILL CONTAIN {{datePosted | date:"MM/dd/yyyy"}}
-    public listOfApplicants: string[],
-    public apply:boolean,
-    public create:string,
-    public updated: string,
     public dialog: MatDialog
   ) { }
 
