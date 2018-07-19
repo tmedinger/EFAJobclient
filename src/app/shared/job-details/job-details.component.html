@@ -1,19 +1,35 @@
-
-<h1>Job Details</h1>
-<p>Job Name:{{jobName}}</p>
-<p>Company Name: {{companyName}}</p>
-<p>Job Description(full description): {{jobDescription}}</p>
-<p>Salary: {{salary}}</p>
-<p>Experience: {{experience}}</p>
-<p>Job Type{{jobType}}</p>
-<p>Date Posted: {{datePosted}}</p>
-<p>List of Applicants:{{listOfApplicants}}</p>
-<p>
-<button mat-raised-button type="submit" value="Apply" (click)="applyToJob()">{{apply}}</button>
-</p>
-<p>
-<button mat-raised-button type="submit" value="Create">{{create}}</button>  
-</p>
-<p>
-<button mat-raised-button type="submit" value="Update">{{update}}</button>  
-</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Job Details</mat-card-title>
+        <!-- future 1150 logo -->
+        <img mat-card-avatar src="../../../assets/eleven-fifty-badge-red.png">
+    </mat-card-header>
+    <mat-card-content>
+        <p><b>Job Name:</b>{{jobName}}</p>
+        <p>
+            <b>Company Name:</b> {{companyName}}</p>
+        <p>
+            <b>Job Description(full description):</b> {{jobDescription}}</p>
+        <p>
+            <b>Salary:</b> {{salary}}</p>
+        <p>
+            <b>Experience:</b> {{experience}}</p>
+        <p>
+            <b>Job Type:</b>{{jobType}}</p>
+        <p>
+            <b>Date Posted:</b> {{datePosted}}</p>
+        <p>
+            <b>List of Applicants:</b>{{listOfApplicants}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <p>
+            <button type="submit" value="Apply" (click)="applyToJob()">{{apply}}</button>
+        </p>
+        <p>
+            <button type="submit" value="Create">{{create}}</button>
+        </p>
+        <p>
+            <button type="submit" value="Update">{{update}}</button>
+        </p>
+    </mat-card-actions>
+</mat-card>
