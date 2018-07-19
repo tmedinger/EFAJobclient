@@ -17,9 +17,11 @@ import {
         MatRadioModule,
         MatSidenavModule,
         MatSlideToggleModule,
+        MatSnackBar,
         MatTableModule,
         MatToolbarModule,
-        MatTooltipModule, } from "@angular/material";
+        MatTooltipModule,
+        MatSnackBarModule, } from "@angular/material";
 import {FormBuilder, FormGroup} from '@angular/forms';
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 import { JobDetailsComponent } from './job-details/job-details.component';
@@ -49,6 +51,7 @@ import { SnippetPipe } from './snippet.pipe';
     MatRadioModule,
     MatSidenavModule,
     MatSlideToggleModule,
+    MatSnackBarModule,
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
@@ -71,6 +74,7 @@ import { SnippetPipe } from './snippet.pipe';
     MatRadioModule,
     MatSidenavModule,
     MatSlideToggleModule,
+    MatSnackBarModule,
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
