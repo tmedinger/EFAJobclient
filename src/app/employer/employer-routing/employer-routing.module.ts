@@ -6,7 +6,6 @@ import { RouterModule, Routes } from '@angular/router'
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' }
-
 =======
 import { RouterModule, Routes } from '@angular/router';
 
@@ -17,7 +16,7 @@ const routes: Routes = [
   { path: 'employerlogin', component: EmployerLoginComponent},
   { path: 'employersignup', component: EmployerSignupComponent}
 ];
->>>>>>> 62ae40cfdf753d3ef1630e5e7c0ec3007dcf3724
+>>>>>>> adbc3a605ea812171dc8b4440e3a0263f8ec0767
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
