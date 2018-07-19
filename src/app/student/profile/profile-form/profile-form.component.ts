@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Student } from '../student'
-import { FormControl, FormGroup } from '@angular/forms'
+import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 
 @Component({
   selector: 'app-profile-form',
@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms'
   styleUrls: ['./profile-form.component.css']
 })
 export class ProfileFormComponent implements OnInit {
+<<<<<<< HEAD
   
   student = new FormGroup({
     first_name:new FormControl,
@@ -25,6 +26,11 @@ export class ProfileFormComponent implements OnInit {
     linkToProjects:new FormControl,
   })
 
+=======
+  studentForm: FormGroup;
+  socialMedia: FormGroup;
+ 
+>>>>>>> develop
   // student:Student={
   //   first_name:'',
   //   last_name:'',
@@ -32,11 +38,17 @@ export class ProfileFormComponent implements OnInit {
   //   username:'',
   //   password:'',
   //   linkToResume:'',
+<<<<<<< HEAD
+=======
+  // }
+  // socialMedia={
+>>>>>>> develop
   //   linkToPortfolio:'',
   //   linkToGitHub:'',
   //   linkToCodePen:'',
   //   linkToProjects:[],
   // }
+<<<<<<< HEAD
   constructor() { }
 
   ngOnInit() {
@@ -44,4 +56,32 @@ export class ProfileFormComponent implements OnInit {
 handleSubmit(){
   console.log('submitted', this.student.value)
 }
+=======
+  constructor(private sf: FormBuilder) {
+    this.studentForm = sf.group({
+    'first_name':'',
+    'last_name':'',
+    'email':'',
+    'username':'',
+    'password':'',
+    'linkToResume':'',
+    })
+    this.socialMedia = sf.group({
+      'linkToPortfolio':'',
+      'linkToGitHub':'',
+      'linkToCodePen':'',
+      'linkToProjects':[],
+    })
+   }
+
+  ngOnInit() {
+  }
+  handleSubmit(){
+    
+    console.log("submitted")
+  }
+  addProject(){
+    console.log('add project clicked')
+  }
+>>>>>>> develop
 }
