@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
+import { JobDetailsComponent } from './job-details/job-details.component';
 import { 
         MatButtonModule,
         MatCardModule,
@@ -23,14 +25,13 @@ import {
         MatTooltipModule,
         MatSnackBarModule, } from "@angular/material";
 import {FormBuilder, FormGroup} from '@angular/forms';
-import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
-import { JobDetailsComponent } from './job-details/job-details.component';
 
 import { EmployerLoginComponent } from '../auth/employer-login/employer-login.component';
 import { StudentLoginComponent } from '../auth/student-login/student-login.component';
 import { EmployerSignupComponent } from '../auth/employer-signup/employer-signup.component';
 import { StudentSignupComponent } from '../auth/student-signup/student-signup.component';
 import { SnippetPipe } from './snippet.pipe';
+import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs-edit.component'
 
 @NgModule({
   imports: [
@@ -92,6 +93,10 @@ import { SnippetPipe } from './snippet.pipe';
     StudentLoginComponent,
     EmployerLoginComponent,
     SnippetPipe,
-    JobDetailsComponent]
+    JobsEditComponent,
+    
+  ],
+
+  entryComponents: []
 })
 export class SharedModule { }
