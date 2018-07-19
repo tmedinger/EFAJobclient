@@ -11,17 +11,17 @@ export class JobDetailsComponent implements OnInit {
 
 
   constructor(
-    public jobName:string,
-    public companyName:string,
-    public jobDescription:string,
-    public salary: number,
-    public experience: string,
-    public jobType: string,
-    public datePosted: string,
-    public listOfApplicants: string[],
-    public apply:boolean,
-    public create: string,
-    public updated: string,
+    // public jobName: string,
+    // public companyName: string,
+    // public jobDescription:string,
+    // public salary: number,
+    // public experience: string,
+    // public jobType: string,
+    // public datePosted: string,
+    // public listOfApplicants: string [],
+    // public apply: boolean,
+    // public create: string,
+    // public updated: string,
     public dialog: MatDialog
   ) { }
 
