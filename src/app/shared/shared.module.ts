@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
-import { JobDetailsComponent, ApplyConfirmAlert } from './job-details/job-details.component';
+import { JobDetailsComponent } from './job-details/job-details.component';
 import { 
         MatButtonModule,
         MatCardModule,
@@ -19,9 +19,11 @@ import {
         MatRadioModule,
         MatSidenavModule,
         MatSlideToggleModule,
+        MatSnackBar,
         MatTableModule,
         MatToolbarModule,
-        MatTooltipModule, } from "@angular/material";
+        MatTooltipModule,
+        MatSnackBarModule, } from "@angular/material";
 import {FormBuilder, FormGroup} from '@angular/forms';
 
 import { EmployerLoginComponent } from '../auth/employer-login/employer-login.component';
@@ -50,6 +52,7 @@ import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs
     MatRadioModule,
     MatSidenavModule,
     MatSlideToggleModule,
+    MatSnackBarModule,
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
@@ -72,6 +75,7 @@ import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs
     MatRadioModule,
     MatSidenavModule,
     MatSlideToggleModule,
+    MatSnackBarModule,
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
@@ -89,11 +93,10 @@ import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs
     StudentLoginComponent,
     EmployerLoginComponent,
     SnippetPipe,
-    ApplyConfirmAlert,
-    JobsEditComponent
+    JobsEditComponent,
     
   ],
 
-  entryComponents: [ApplyConfirmAlert]
+  entryComponents: []
 })
 export class SharedModule { }
