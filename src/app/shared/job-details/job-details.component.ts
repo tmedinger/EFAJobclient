@@ -20,13 +20,8 @@ export class JobDetailsComponent implements OnInit {
     public datePosted: string,
     public listOfApplicants: string[],
     public apply:boolean,
-<<<<<<< HEAD
-    public create:boolean,
-    public update: boolean,
-=======
     public create: string,
     public updated: string,
->>>>>>> 13348056054b6c2b44c43e9c84c0b61afa1ef32e
     public dialog: MatDialog
   ) { }
 
