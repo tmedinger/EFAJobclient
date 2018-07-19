@@ -12,28 +12,6 @@ export interface EmployerTableItem {
   studentsApplied: string;
 }
 
-// Bring in persisting data to the employer-dashboard table so it is pulling from the data base.
-
-// TESTING: 
-// Perform a unit test where you build out a test in the spec file and utilize Jasmine to perform the test. Go here: https://angular.io/guide/testing to walk through testing.
-
-// Unit testing will be required for both orange and red ticket items.
-
-// fetchExpenses = () => {
-//   fetch(`${APIURL}/api/expenses`, {
-//       method: "GET",
-//       headers: new Headers({
-//           "Content-Type": "application/json",
-//           "Authorization": this.props.setTokenFromSplash
-//       })
-//   })
-//       .then(res => res.json())
-//       .then((returnedData) => {
-//           employerTableArray: returnedData 
-//       })
-//       .catch(err => console.log(err.message))
-// }
-
 // TODO: replace this with real data from your application
 // THIS TABLE WILL BE POPULATED FROM THE DATABASE
 const employerTableArray: EmployerTableItem[] = [

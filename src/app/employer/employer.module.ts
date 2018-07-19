@@ -6,13 +6,16 @@ import { EmployerRoutingModule } from './employer-routing/employer-routing.modul
 import { EmployerTableComponent } from './employer-dashboard/employer-table/employer-table.component';
 import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 
+import { HttpClientModule } from "@angular/common/http";
+
 @NgModule({
   imports: [
     CommonModule,
     EmployerRoutingModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    HttpClientModule
   ],
   declarations: [EmployerDashboardComponent, NotificationComponent, EmployerTableComponent]
 })
