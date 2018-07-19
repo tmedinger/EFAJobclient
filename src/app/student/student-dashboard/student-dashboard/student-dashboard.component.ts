@@ -9,8 +9,8 @@ import {JobDetailsComponent} from '../../../shared/job-details/job-details.compo
 export class StudentDashboardComponent implements OnInit {
 
   constructor() { }
-
+  
   ngOnInit() {
   }
-
+  
 }

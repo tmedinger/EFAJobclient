@@ -1,30 +1,61 @@
-<div>
-  <form MatFormFieldModule [formGroup]="student">
-    <label for="first_name">First Name:</label>
-    <input type="text" name="first_name"  formControlName="first_name"><button (click)="delete()">Delete</button>
-    <label for="last_name">Last Name:</label>
-    <input type="text" name="last_name" formControlName="last_name"><button (click)="delete()">Delete</button>
-    <label for="email">Email:</label>
-    <input type="text" name="email" formControlName="email"><button (click)="delete()">Delete</button>
-    <label for="username">Username:</label>
-    <input type="text" name="username" formControlName="username"><button (click)="delete()">Delete</button>
-    <label for="password">Password:</label>
-    <input type="password" name="password" formControlName="password"><button (click)="delete()">Delete</button>
-    <label for="linkToResume">Resume link:</label>
-    <input type="url" name="linkToResume" formControlName="linkToResume"><button (click)="delete()">Delete</button>
-  </form>
-  <form MatFormFieldModule [formGroup]="social_media"><button (click)="delete()">Delete</button>
-    <label for="linkToPortfolio">Portfolio Link:</label>
-    <input type="url" name="linkToPortfolio" formControlName="linkToPortfolio"><button (click)="delete()">Delete</button>
-    <label for="linkToGitHub">Github link:</label>
-    <input type="url" name="linkToGitHub" formControlName="linkToGitHub"><button (click)="delete()">Delete</button>
-    <label for="linkToCodePen">Codepen Link:</label>
-    <input type="url" name="linkToCodePen" formControlName="linkToCodePen"><button (click)="delete()">Delete</button>
-    <label for="linkToProjects">Projects Link:</label>
-    <input type="url" name="linkToProjects" formControlName="linkToProjects"><button (click)="delete()">Delete</button>
+<div id="form-container">
   
-  </form>
-  <button type="submit" (click)="handleSubmit()">Save</button>
+    <mat-form-field class="formField" appearance="standard">
+      <mat-label>First Name</mat-label>
+      <input matInput type="text" class="inputField">  
+    </mat-form-field>
+      <button mat-raised-button class="formDeleteButton"(click)="delete()">Delete</button>
+    
+    <mat-form-field class="formField" appearance="standard">
+      <mat-label>Last Name</mat-label>
+      <input matInput type="text" class="inputField">  
+    </mat-form-field>
+      <button mat-raised-button class="formDeleteButton"(click)="delete()">Delete</button>
 
-  <!-- <p>Form value: {{ studentForm.value | json }}</p> -->
+    <mat-form-field class="formField" appearance="standard">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" class="inputField"> 
+    </mat-form-field>
+      <button mat-raised-button class="formDeleteButton"(click)="delete()" >Delete</button>
+
+    <mat-form-field class="formField" appearance="standard">
+      <mat-label>Username</mat-label>
+      <input matInput type="text" class="inputField">
+    </mat-form-field>
+      <button mat-raised-button class="formDeleteButton"(click)="delete()">Delete</button>
+
+    <mat-form-field class="formField" appearance="standard">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" class="inputField">
+    </mat-form-field>
+      <button mat-raised-button class="formDeleteButton"(click)="delete()">Delete</button>
+
+    <mat-form-field class="formField" appearance="standard">
+      <mat-label>Portfolio Url</mat-label>
+      <input matInput type="url" class="inputField">
+    </mat-form-field>
+      <button mat-raised-button class="formDeleteButton"(click)="delete()">Delete</button>
+
+    <mat-form-field class="formField" appearance="standard">
+      <mat-label>Github Url</mat-label>
+      <input matInput type="url" class="inputField">
+    </mat-form-field>
+      <button mat-raised-button class="formDeleteButton"(click)="delete()">Delete</button>
+
+    <mat-form-field class="formField" appearance="standard">
+      <mat-label>Codepen Url</mat-label>
+      <input matInput type="url" class="inputField">
+    </mat-form-field>
+      <button mat-raised-button class="formDeleteButton"(click)="delete()">Delete</button>
+
+    <mat-form-field class="formField" appearance="standard">
+      <mat-label>Project Url</mat-label>
+      <input matInput type="url" class="inputField">
+    </mat-form-field>
+      <button mat-raised-button class="formDeleteButton"(click)="delete()">Delete</button>
+
+      <button mat-raised-button type="submit" (click)="handleSubmit()">Save</button>
+      <button mat-raised-button (click)="addProject">Add Project</button>
+ 
 </div>
+
