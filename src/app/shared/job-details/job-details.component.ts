@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef, MatDialogModule, MatDialog } from '@angular/material';
+import { MatDialogRef, MatDialogModule, MatDialog, MatCard, MatCardActions,MatCardHeader, MatCardAvatar, MatCardContent  } from '@angular/material';
 
 @Component({
   selector: 'app-job-details',
@@ -20,8 +20,8 @@ export class JobDetailsComponent implements OnInit {
     public datePosted: string,
     public listOfApplicants: string[],
     public apply:boolean,
-    public create:any,
-    public updated: any,
+    public create:boolean,
+    public update: boolean,
     public dialog: MatDialog
   ) { }
 

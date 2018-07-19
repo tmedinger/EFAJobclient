@@ -29,6 +29,7 @@ import { StudentLoginComponent } from '../auth/student-login/student-login.compo
 import { EmployerSignupComponent } from '../auth/employer-signup/employer-signup.component';
 import { StudentSignupComponent } from '../auth/student-signup/student-signup.component';
 import { SnippetPipe } from './snippet.pipe';
+import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs-edit.component'
 
 @NgModule({
   imports: [
@@ -87,7 +88,9 @@ import { SnippetPipe } from './snippet.pipe';
     EmployerSignupComponent,
     StudentLoginComponent,
     EmployerLoginComponent,
-    SnippetPipe,ApplyConfirmAlert
+    SnippetPipe,
+    ApplyConfirmAlert,
+    JobsEditComponent
     
   ],
 
