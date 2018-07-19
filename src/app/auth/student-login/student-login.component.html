@@ -5,6 +5,7 @@
   <div>
     <mat-form-field>
       <input matInput placeholder="username" formControllName="username">
+      <div class="alert" *ngIf="!studentForm.controls['username'].vaild && studentForm.controls['username'].touched">Username or Password dont match</div>
       <!-- <mat-error *ngIf="username.invalid && username.touched">
         username is invalid
       </mat-error> -->
@@ -13,6 +14,7 @@
     <div>
     <mat-form-field>
       <input matInput placeholder="password" formControllName="password">
+      <div class="alert" *ngIf="!studentForm.controls['password'].vaild && studentForm.controls['password'].touched">Username or Password dont match</div>
       <!-- <mat-error *ngIf="password.invalid && password.touched">
         password is invalid
       </mat-error> -->
