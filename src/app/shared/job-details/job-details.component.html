@@ -21,14 +21,14 @@
             <b>List of Applicants:</b>{{listOfApplicants}}</p>
     </mat-card-content>
     <mat-card-actions>
+        <P>
+            <button mat-raised-button type="submit" value="Apply" (click)="applyToJob()">Apply</button>
+        </P>
         <p>
-            <button type="submit" value="Apply" (click)="applyToJob()">{{apply}}</button>
+            <button mat-raised-button type="submit" value="Create">Create</button>
         </p>
         <p>
-            <button type="submit" value="Create">{{create}}</button>
-        </p>
-        <p>
-            <button type="submit" value="Update">{{update}}</button>
+            <button mat-raised-button type="submit" value="Update">Update</button>
         </p>
     </mat-card-actions>
 </mat-card>
