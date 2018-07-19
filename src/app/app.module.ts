@@ -17,6 +17,8 @@ import { ProfileFormComponent } from '../app/student/profile/profile-form/profil
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent} from './student/profile/profile.component';
 import { ApplyComponent } from './student/apply/apply.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { JobsEditComponent } from './employer/employer-dashboard/jobs-edit/jobs-edit.component';
 
 @NgModule({
   declarations: [
@@ -32,14 +34,17 @@ import { ApplyComponent } from './student/apply/apply.component'
     ProfileFormComponent,
     PageNotFoundComponent,
     ProfileComponent,
-    ApplyComponent
+    ApplyComponent,
+    JobsEditComponent,
   ],
   imports: [
     EmployerModule,
     BrowserModule, 
     SharedModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
