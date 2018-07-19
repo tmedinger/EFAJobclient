@@ -88,6 +88,7 @@ import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs
     EmployerSignupComponent,
     StudentLoginComponent,
     EmployerLoginComponent,
+    JobDetailsComponent,
  
   ],
   declarations: [

@@ -8,8 +8,6 @@ import { MatDialogRef, MatDialogModule, MatDialog, MatCard, MatCardActions,MatCa
 })
 export class JobDetailsComponent implements OnInit {
   
-
-
   constructor(
     public jobName:string,
     public companyName:string,
@@ -17,11 +15,11 @@ export class JobDetailsComponent implements OnInit {
     public salary: number,
     public experience: string,
     public jobType: string,
-    public datePosted: string,
+    public datePosted: string, // TEMPORARY: HTML WILL CONTAIN {{datePosted | date:"MM/dd/yyyy"}}
     public listOfApplicants: string[],
     public apply:boolean,
-    public create:boolean,
-    public update: boolean,
+    public create:string,
+    public updated: string,
     public dialog: MatDialog
   ) { }
 
