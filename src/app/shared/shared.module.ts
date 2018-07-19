@@ -10,7 +10,7 @@ import {
         MatCheckboxModule,
         MatButtonToggleModule,
         MatDialogModule,
-        MatFormFieldModule,
+        // MatFormFieldModule,
         MatGridListModule,
         MatIconModule,
         MatInputModule,
@@ -22,8 +22,8 @@ import {
         MatTableModule,
         MatToolbarModule,
         MatTooltipModule, } from "@angular/material";
-import {FormBuilder, FormGroup} from '@angular/forms';
-
+import {MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 import { EmployerLoginComponent } from '../auth/employer-login/employer-login.component';
 import { StudentLoginComponent } from '../auth/student-login/student-login.component';
 import { EmployerSignupComponent } from '../auth/employer-signup/employer-signup.component';
@@ -54,6 +54,8 @@ import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs
     MatToolbarModule,
     MatTooltipModule,
     ReactiveFormsModule,
+    FormsModule,
+
   ],
 
   exports: [
@@ -79,7 +81,7 @@ import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs
     EmployerSignupComponent,
     StudentLoginComponent,
     EmployerLoginComponent,
-
+ 
   ],
   declarations: [
     SnippetPipe,

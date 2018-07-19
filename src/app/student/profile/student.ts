@@ -5,8 +5,4 @@ export class Student{
     username:string;
     password:string;
     linkToResume:string;
-    linkToPortfolio:string;
-    linkToGitHub:string;
-    linkToCodePen:string;
-    linkToProjects:object;
 }
