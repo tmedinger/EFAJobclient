@@ -10,17 +10,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { FileSelectDirective } from 'ng2-file-upload';
 import { EmployerModule } from './employer/employer.module';
-import { NotificationsComponent } from './student/student-dashboard/notifications/notifications.component';
 import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applied.component';
-import { StudentDashboardComponent } from './student/student-dashboard/student-dashboard/student-dashboard.component';
 import { ProfileFormComponent } from '../app/student/profile/profile-form/profile-form.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-<<<<<<< HEAD
-=======
 import { ProfileComponent} from './student/profile/profile.component';
 import { ApplyComponent } from './student/apply/apply.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
->>>>>>> develop
 
 @NgModule({
   declarations: [
@@ -30,17 +25,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     LayoutComponent,
     AuthComponent,
-    NotificationsComponent,
     JobsAppliedComponent,
-    StudentDashboardComponent,
     ProfileFormComponent,
     PageNotFoundComponent,
-<<<<<<< HEAD
-=======
     ProfileComponent,
     ApplyComponent,
     
->>>>>>> develop
   ],
   imports: [
     EmployerModule,

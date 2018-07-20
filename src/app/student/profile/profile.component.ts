@@ -18,11 +18,11 @@ export class ProfileComponent implements OnInit {
   constructor(public snackBar: MatSnackBar) { }
 
   ngOnInit() {
-    this.uploader.onAfterAddingFile = (file) => { file.withCredentials = false; };
-    this.uploader.onCompleteItem = (item: any, response: any, status: any, headers: any) => {
-         console.log('ResumeUpload:uploaded:', item, status, response);
-         alert('File uploaded successfully');
-     }
+    // this.uploader.onAfterAddingFile = (file) => { file.withCredentials = false; };
+    // this.uploader.onCompleteItem = (item: any, response: any, status: any, headers: any) => {
+    //      console.log('ResumeUpload:uploaded:', item, status, response);
+    //      alert('File uploaded successfully');
+    //  }
    };
 
    openSnackBar() {
