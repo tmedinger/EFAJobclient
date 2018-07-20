@@ -4,16 +4,25 @@ import { EmployerDashboardComponent } from './employer-dashboard/employer-dashbo
 import { NotificationComponent } from './employer-dashboard/notification/notification.component';
 import { EmployerRoutingModule } from './employer-routing/employer-routing.module';
 import { EmployerTableComponent } from './employer-dashboard/employer-table/employer-table.component';
-import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import {
+   MatTableModule,
+   MatPaginatorModule,
+   MatSortModule,
+  MatFormFieldModule } from '@angular/material';
 import { JobsEditComponent } from './employer-dashboard/jobs-edit/jobs-edit.component';
+import { HttpClientModule } from "@angular/common/http";
+import  { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
-@NgModule({
+@NgModule({ 
   imports: [
     CommonModule,
     EmployerRoutingModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatFormFieldModule
   ],
   declarations: [
     EmployerDashboardComponent, 
@@ -26,6 +35,9 @@ import { JobsEditComponent } from './employer-dashboard/jobs-edit/jobs-edit.comp
     NotificationComponent, 
     EmployerTableComponent,
     JobsEditComponent,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule
   ]
 })
 export class EmployerModule { }

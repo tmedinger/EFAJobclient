@@ -12,6 +12,7 @@ import { StudentNotificationsComponent } from './student-dashboard/student-notif
 import { JobsAppliedComponent } from './profile/jobs-applied/jobs-applied.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -20,9 +21,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     StudentRoutingModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    FormsModule
   ],
-  declarations: [
+  declarations: [ 
     StudentDashboardComponent,
     ProfileComponent,
     ProfileFormComponent, 
@@ -39,7 +41,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ApplyComponent,
     TeaserPipe,
     StudentNotificationsComponent,
-
+    FormsModule
   ]
 })
 export class StudentModule { }

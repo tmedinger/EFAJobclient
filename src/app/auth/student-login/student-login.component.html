@@ -2,6 +2,7 @@
   <form [formGroup]="studentForm" [hidden]="success" (ngSubmit)="submitHandler()">
   
   <h1>Student Login</h1>
+  <hr color="#D9514E" />
   <div>
     <mat-form-field>
       <input matInput placeholder="username" formControllName="username">
@@ -18,12 +19,15 @@
       </mat-error> -->
     </mat-form-field>
   </div>
-  
   <!-- <button mat-raised-button [disabled]="employerForm.invalid" color="primary">Submit</button> -->
   <div class="studentButtons">
-  <button mat-raised-button [disabled]="studentForm.invalid" color="primary">Submit</button>
-  <button mat-stroked-button  color="primary" routerLink="/studentsignup">Signup Here</button>
-  <button mat-raised-button color="primary" routerLink='/employerlogin'>Employer</button>
+    <button mat-raised-button class="submit" color="primary">Submit</button>
+    <button mat-raised-button class="employer" color="primary" routerLink='/employerlogin'>I'm an Employer</button>
+  </div>
+  <div class="noaccount">
+      <a routerLink="/studentsignup">Don't have an account?</a>
   </div>
   </form>
   </mat-card>
+
+  <!-- [disabled]="studentForm.invalid" -->

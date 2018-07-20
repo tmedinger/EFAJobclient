@@ -1,7 +1,7 @@
 <mat-card class="cardForSignup" >
- <form [formGroup]="myForm"  >
+ <form [formGroup]="myForm">
  <h1>Student Signup</h1>
-  <hr>
+ <hr color="#D9514E" />
   <div>
   <mat-form-field class="student-signup-component">
     <input matInput placeholder="Username" formControlName="Username" required>
@@ -26,7 +26,7 @@
 </form>
 <div class="matButton-signup-card-signup">
 <button mat-raised-button color="primary" >Signup</button>
-<button mat-raised-button color="primary" routerLink="/employersignup">Employer</button>
+<button mat-raised-button color="primary" routerLink="/employersignup">I'm an Employer</button>
 </div>
-<button routerLink="/studentlogin">already have an account?</button>
+<a routerLink="/studentlogin">Already have an account?</a>
 </mat-card>
