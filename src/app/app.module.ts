@@ -17,38 +17,38 @@ import { EmployerSignupComponent } from '../app/auth/employer-signup/employer-si
 import { StudentSignupComponent } from '../app/auth/student-signup/student-signup.component';
 import { AuthComponent } from './auth/auth.component';
 @NgModule({
-  declarations: [
-    AppComponent,
-    FileSelectDirective,
-    NavbarComponent,
-    FooterComponent, 
-    LayoutComponent,
-    PageNotFoundComponent,
-    EmployerLoginComponent,
-    StudentLoginComponent,
-    EmployerSignupComponent,
-    StudentSignupComponent,
-    AuthComponent
-  ],
-  imports: [
-    FormsModule,
-    BrowserModule, 
-    SharedModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    StudentModule,
-    EmployerModule,
-  ],
-  exports: [
-    FormsModule,
-    BrowserModule, 
-    SharedModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    StudentModule,
-    EmployerModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+ declarations: [
+   AppComponent,
+   FileSelectDirective,
+   NavbarComponent,
+   FooterComponent,
+   LayoutComponent,
+   PageNotFoundComponent,
+   EmployerLoginComponent,
+   StudentLoginComponent,
+   EmployerSignupComponent,
+   StudentSignupComponent,
+   AuthComponent
+ ],
+ imports: [
+   FormsModule,
+   BrowserModule,
+   SharedModule,
+   AppRoutingModule,
+   ReactiveFormsModule,
+   StudentModule,
+   EmployerModule,
+ ],
+ exports: [
+   FormsModule,
+   BrowserModule,
+   SharedModule,
+   AppRoutingModule,
+   ReactiveFormsModule,
+   StudentModule,
+   EmployerModule,
+ ],
+ providers: [],
+ bootstrap: [AppComponent]
 })
 export class AppModule { }
