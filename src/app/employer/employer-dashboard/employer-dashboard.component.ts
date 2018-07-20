@@ -8,6 +8,8 @@ import {JobDetailsComponent} from '../../shared/job-details/job-details.componen
 })
 export class EmployerDashboardComponent implements OnInit {
 
+  date: Date = new Date(); // TEMPORARY: THIS WILL COME FROM THE DATABASE {{date | date:"MM/dd/yyyy"}}
+  
   constructor() { }
 
   ngOnInit() {
