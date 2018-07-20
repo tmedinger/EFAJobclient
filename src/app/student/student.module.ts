@@ -16,6 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material';
+import { FileSelectDirective } from 'ng2-file-upload';
+import { MatSnackBarModule } from '@angular/material'
 
 @NgModule({
   imports: [
@@ -29,6 +31,7 @@ import { MatPaginatorModule } from '@angular/material';
     MatButtonModule,
     MatIconModule,
     MatPaginatorModule,
+    MatSnackBarModule
   ],
   declarations: [ 
     StudentDashboardComponent,
@@ -38,6 +41,8 @@ import { MatPaginatorModule } from '@angular/material';
     ApplyComponent,
     TeaserPipe,
     StudentNotificationsComponent,
+    FileSelectDirective
+
   ],
   exports: [
     StudentDashboardComponent,
@@ -49,7 +54,8 @@ import { MatPaginatorModule } from '@angular/material';
     StudentNotificationsComponent,
     FormsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatSnackBarModule
   ]
 })
 export class StudentModule { }
