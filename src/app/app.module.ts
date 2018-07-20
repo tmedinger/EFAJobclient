@@ -16,6 +16,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProfileComponent} from './student/profile/profile.component';
 import { ApplyComponent } from './student/apply/apply.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EmployerLoginComponent } from './auth/employer-login/employer-login.component';
+import { EmployerSignupComponent } from './auth/employer-signup/employer-signup.component';
+import { StudentLoginComponent } from './auth/student-login/student-login.component';
+import { StudentSignupComponent } from './auth/student-signup/student-signup.component';
+import { StudentDashboardComponent } from './student/student-dashboard/student-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PageNotFoundComponent,
     ProfileComponent,
     ApplyComponent,
-    
+    EmployerLoginComponent,
+    EmployerSignupComponent,
+    StudentLoginComponent,
+    StudentSignupComponent,
+    StudentDashboardComponent,
   ],
   imports: [
     EmployerModule,
