@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {JobDetailsComponent} from '../../../shared/job-details/job-details.component';
+import { TeaserPipe } from '../teaser.pipe';
 
 @Component({
   selector: 'app-student-dashboard',
@@ -9,8 +9,8 @@ import {JobDetailsComponent} from '../../../shared/job-details/job-details.compo
 export class StudentDashboardComponent implements OnInit {
 
   constructor() { }
-
+  
   ngOnInit() {
   }
-
+  
 }

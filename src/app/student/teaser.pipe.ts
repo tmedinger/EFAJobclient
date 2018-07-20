@@ -5,12 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class TeaserPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    let discTeaser = value;
-    if(args[0].length ==="150"){
-
-    }
-    return discTeaser;
+  jobTeaser: string = "";
+    transform(value: any, limit: number = 10, trail: string = '...'): string {
+      if (value == null) {
+          return "";
+      }
+      return value.length > limit ? value.substring(0, limit) + trail : value;
   }
-
 }

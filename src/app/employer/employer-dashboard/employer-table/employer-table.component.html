@@ -4,7 +4,7 @@
     <!-- Job Name Column -->
      <ng-container matColumnDef="jobName">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Job Name</th>
-        <td mat-cell *matCellDef="let row">{{row.jobName}}</td>
+        <td routerLink="/jobdetails" mat-cell *matCellDef="let row">{{row.jobName}}</td>
       </ng-container>
   
       <!-- Salary Column -->

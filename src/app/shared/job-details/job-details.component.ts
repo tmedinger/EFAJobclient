@@ -8,8 +8,7 @@ import { MatDialogRef, MatDialogModule, MatDialog, MatCardModule, MatButtonModul
 })
 export class JobDetailsComponent implements OnInit {
   
-
-
+  
   constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
