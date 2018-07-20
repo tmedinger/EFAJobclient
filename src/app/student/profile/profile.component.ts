@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
-=======
->>>>>>> 1b2e8b722b18e2ec01b250863ea41fbdac9ec233
 import { MatSnackBar } from '@angular/material';
-import { FileUploader, FileSelectDirective } from 'ng2-file-upload/ng2-file-upload';
 
 
 const URL = '';
