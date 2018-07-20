@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef, MatDialogModule, MatDialog, MatCard, MatCardActions,MatCardHeader, MatCardAvatar, MatCardContent  } from '@angular/material';
+import { MatDialogRef, MatDialogModule, MatDialog, MatCardModule, MatButtonModule } from '@angular/material';
 
 @Component({
   selector: 'app-job-details',
@@ -8,27 +8,8 @@ import { MatDialogRef, MatDialogModule, MatDialog, MatCard, MatCardActions,MatCa
 })
 export class JobDetailsComponent implements OnInit {
   
-
-
-  constructor(
-    public jobName:string,
-    public companyName:string,
-    public jobDescription:string,
-    public salary: number,
-    public experience: string,
-    public jobType: string,
-    public datePosted: string,
-    public listOfApplicants: string[],
-    public apply:boolean,
-<<<<<<< HEAD
-    public create:boolean,
-    public update: boolean,
-=======
-    public create: string,
-    public updated: string,
->>>>>>> 13348056054b6c2b44c43e9c84c0b61afa1ef32e
-    public dialog: MatDialog
-  ) { }
+  
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
