@@ -5,7 +5,8 @@ import { NotificationComponent } from './employer-dashboard/notification/notific
 import { EmployerRoutingModule } from './employer-routing/employer-routing.module';
 import { EmployerTableComponent } from './employer-dashboard/employer-table/employer-table.component';
 import { MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
-import { JobsEditComponent } from './employer-dashboard/jobs-edit/jobs-edit.component';
+
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   imports: [
@@ -13,8 +14,9 @@ import { JobsEditComponent } from './employer-dashboard/jobs-edit/jobs-edit.comp
     EmployerRoutingModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    HttpClientModule
   ],
-  declarations: [EmployerDashboardComponent, NotificationComponent, EmployerTableComponent, JobsEditComponent]
+  declarations: [EmployerDashboardComponent, NotificationComponent, EmployerTableComponent]
 })
 export class EmployerModule { }

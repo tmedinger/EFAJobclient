@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
+import { JobDetailsComponent, ApplyConfirmAlert } from './job-details/job-details.component';
 import { 
         MatButtonModule,
         MatCardModule,
         MatCheckboxModule,
         MatButtonToggleModule,
         MatDialogModule,
-        MatFormFieldModule,
+        // MatFormFieldModule,
         MatGridListModule,
         MatIconModule,
         MatInputModule,
@@ -17,14 +19,22 @@ import {
         MatRadioModule,
         MatSidenavModule,
         MatSlideToggleModule,
+        MatSnackBar,
         MatTableModule,
         MatToolbarModule,
-        MatTooltipModule,
+        MatTooltipModule, 
+        MatSnackBarModule,} from "@angular/material";
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
         
-} from "@angular/material";
-import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
-import { JobDetailsComponent } from './job-details/job-details.component';
-import { PipePipe } from './pipe.pipe';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
+import { EmployerLoginComponent } from '../auth/employer-login/employer-login.component';
+import { StudentLoginComponent } from '../auth/student-login/student-login.component';
+import { EmployerSignupComponent } from '../auth/employer-signup/employer-signup.component';
+import { StudentSignupComponent } from '../auth/student-signup/student-signup.component';
+import { SnippetPipe } from './snippet.pipe';
+import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs-edit.component'
 
 @NgModule({
   imports: [
@@ -45,11 +55,13 @@ import { PipePipe } from './pipe.pipe';
     MatRadioModule,
     MatSidenavModule,
     MatSlideToggleModule,
+    MatSnackBarModule,
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    // MatError,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+
   ],
 
   exports: [
@@ -68,11 +80,31 @@ import { PipePipe } from './pipe.pipe';
     MatRadioModule,
     MatSidenavModule,
     MatSlideToggleModule,
+    MatSnackBarModule,
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-
+    StudentSignupComponent,
+    EmployerSignupComponent,
+    StudentLoginComponent,
+    EmployerLoginComponent,
+    JobDetailsComponent,
+    ApplyConfirmAlert,
+ 
   ],
-  declarations: [JobDetailsComponent, PipePipe]
+  declarations: [
+    SnippetPipe,
+    JobDetailsComponent,
+    StudentSignupComponent,
+    EmployerSignupComponent,
+    StudentLoginComponent,
+    EmployerLoginComponent,
+    SnippetPipe,
+    JobsEditComponent,
+    ApplyConfirmAlert,
+    
+  ],
+
+  entryComponents: [ApplyConfirmAlert]
 })
 export class SharedModule { }

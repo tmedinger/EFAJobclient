@@ -1,14 +1,29 @@
 .studentCard{
     height: 50%;
     width: 30%;
-    margin-left: 33%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5%;
-    align-content: center
+    background-color: #8acfba;
 }
 .studentButtons{
-    margin-left:49%;
     margin-bottom: 5%;
+    display: inline-block;
+    width: 100%;
+    text-align-last: right;
 }
-.studentButtons button{
-    margin: 1%;
+.studentButtons .submit{
+    float: left;
+}
+.studentButtons button:hover {
+    color: #D9514E;
+    background-color: white;
+    border: 1px solid #D9514E;
+}
+.noaccount a {
+    text-decoration: none;
+    color: #D9514E;
+}
+.noaccount a:hover {
+    text-decoration: underline;
 }
