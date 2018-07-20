@@ -7,6 +7,7 @@ import { FormControl, FormGroup } from '@angular/forms'
   templateUrl: './profile-form.component.html',
   styleUrls: ['./profile-form.component.css']
 })
+
 export class ProfileFormComponent implements OnInit {
   
   studentForm = new FormGroup({
@@ -36,6 +37,7 @@ export class ProfileFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 handleSubmit(){
   console.log('submitted', this.studentForm)
