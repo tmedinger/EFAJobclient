@@ -9,7 +9,6 @@ export class StudentNotificationsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

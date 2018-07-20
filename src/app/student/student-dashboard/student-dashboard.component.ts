@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TeaserPipe } from '../teaser.pipe';
 
 @Component({
   selector: 'app-student-dashboard',
