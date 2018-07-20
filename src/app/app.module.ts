@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule, FormBuilder} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './ui/navbar/navbar.component';
 import { FooterComponent } from './ui/footer/footer.component';
@@ -17,6 +17,7 @@ import { ProfileFormComponent } from '../app/student/profile/profile-form/profil
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent} from './student/profile/profile.component';
 import { ApplyComponent } from './student/apply/apply.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,14 +33,17 @@ import { ApplyComponent } from './student/apply/apply.component'
     ProfileFormComponent,
     PageNotFoundComponent,
     ProfileComponent,
-    ApplyComponent
+    ApplyComponent,
+    
   ],
   imports: [
     EmployerModule,
     BrowserModule, 
     SharedModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

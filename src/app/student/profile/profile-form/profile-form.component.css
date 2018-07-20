@@ -1,0 +1,22 @@
+#form-container{
+    margin: auto;
+    border: .25em solid black;
+    display: inline-block;
+    max-width: 75em;
+    margin-top: 2em;
+    text-align: center;
+}
+.formField{
+    margin:auto;
+    min-width: 23em;
+    max-height: 4em;
+}
+
+.inputField{
+    margin: 1em;
+}
+
+.formDeletButton{
+    float: right;
+    margin: 2em;
+}
