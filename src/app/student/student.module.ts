@@ -15,7 +15,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
-
+import { MatPaginatorModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -27,7 +27,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatExpansionModule,
     FormsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatPaginatorModule,
   ],
   declarations: [ 
     StudentDashboardComponent,
