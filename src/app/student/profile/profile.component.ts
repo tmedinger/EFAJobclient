@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FileUploader, FileSelectDirective } from 'ng2-file-upload/ng2-file-upload';
+import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
 import { MatSnackBar } from '@angular/material';
 
 const URL = '';

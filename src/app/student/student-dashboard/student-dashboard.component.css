@@ -1,5 +1,5 @@
 #jobCard {
-    width: 75%;
+    width: 65%;
     float: right   
 }
 mat-card-header {
@@ -17,5 +17,7 @@ p {
 }
 #jobsPosted{
     margin:auto;
+}
+.pagination-student{
     
 }
