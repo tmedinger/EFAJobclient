@@ -1,49 +1,52 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule, FormBuilder} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './ui/navbar/navbar.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { LayoutComponent } from './ui/layout/layout.component';
-import { AuthComponent } from './auth/auth.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { FileSelectDirective } from 'ng2-file-upload';
-import { EmployerModule } from './employer/employer.module';
-import { NotificationsComponent } from './student/student-dashboard/notifications/notifications.component';
-import { JobsAppliedComponent } from './student/profile/jobs-applied/jobs-applied.component';
-import { StudentDashboardComponent } from './student/student-dashboard/student-dashboard/student-dashboard.component';
-import { ProfileFormComponent } from '../app/student/profile/profile-form/profile-form.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ProfileComponent} from './student/profile/profile.component';
-import { ApplyComponent } from './student/apply/apply.component'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { StudentModule } from '../app/student/student.module';
+import { EmployerModule } from '../app/employer/employer.module';
+import { EmployerLoginComponent } from '../app/auth/employer-login/employer-login.component';
+import { StudentLoginComponent } from '../app/auth/student-login/student-login.component';
+import { EmployerSignupComponent } from '../app/auth/employer-signup/employer-signup.component';
+import { StudentSignupComponent } from '../app/auth/student-signup/student-signup.component';
+import { AuthComponent } from './auth/auth.component';
 @NgModule({
   declarations: [
     AppComponent,
     FileSelectDirective,
     NavbarComponent,
-    FooterComponent,
+    FooterComponent, 
     LayoutComponent,
-    AuthComponent,
-    NotificationsComponent,
-    JobsAppliedComponent,
-    StudentDashboardComponent,
-    ProfileFormComponent,
     PageNotFoundComponent,
-    ProfileComponent,
-    ApplyComponent,
-    
+    EmployerLoginComponent,
+    StudentLoginComponent,
+    EmployerSignupComponent,
+    StudentSignupComponent,
+    AuthComponent
   ],
   imports: [
-    EmployerModule,
+    FormsModule,
     BrowserModule, 
     SharedModule,
-    ReactiveFormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    
+    ReactiveFormsModule,
+    StudentModule,
+    EmployerModule,
+  ],
+  exports: [
+    FormsModule,
+    BrowserModule, 
+    SharedModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    StudentModule,
+    EmployerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

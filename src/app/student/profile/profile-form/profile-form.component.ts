@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Student } from '../student'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 
 @Component({
@@ -7,6 +6,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms'
   templateUrl: './profile-form.component.html',
   styleUrls: ['./profile-form.component.css']
 })
+
 export class ProfileFormComponent implements OnInit {
   studentForm: FormGroup;
   socialMedia: FormGroup;
@@ -43,6 +43,7 @@ export class ProfileFormComponent implements OnInit {
    }
 
   ngOnInit() {
+    
   }
   handleSubmit(){
     
