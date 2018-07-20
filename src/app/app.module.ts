@@ -6,7 +6,6 @@ import { FooterComponent } from './ui/footer/footer.component';
 import { LayoutComponent } from './ui/layout/layout.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
-import { FileSelectDirective } from 'ng2-file-upload';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { StudentModule } from '../app/student/student.module';
@@ -18,8 +17,7 @@ import { StudentSignupComponent } from '../app/auth/student-signup/student-signu
 import { AuthComponent } from './auth/auth.component';
 @NgModule({
   declarations: [
-    AppComponent,
-    FileSelectDirective,
+    AppComponent,  
     NavbarComponent,
     FooterComponent, 
     LayoutComponent,
