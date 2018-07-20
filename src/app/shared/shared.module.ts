@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
 import { JobDetailsComponent, ApplyConfirmAlert } from './job-details/job-details.component';
 import { 
         MatButtonModule,
