@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef, MatDialogModule, MatDialog, MatCardModule, MatButtonModule } from '@angular/material';
+import { MatDialogRef, MatDialogModule, MatDialog, MatCardModule, MatButtonModule, MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-job-details',
@@ -9,7 +9,8 @@ import { MatDialogRef, MatDialogModule, MatDialog, MatCardModule, MatButtonModul
 export class JobDetailsComponent implements OnInit {
   
   
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog,
+              public snackBar: MatSnackBar) { }
 
   ngOnInit() {
   }
@@ -18,6 +19,12 @@ export class JobDetailsComponent implements OnInit {
     const applyAlert = this.dialog.open(ApplyConfirmAlert, {
       height: "200px",
       width: "250px"
+    });
+  }
+
+  openSnackBar(message: string) {
+    this.snackBar.open("New application submitted to posted job.", "", {
+      duration: 3000, verticalPosition: "top"
     });
   }
 
