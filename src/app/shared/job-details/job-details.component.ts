@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef, MatDialogModule, MatDialog, MatCard, MatCardActions,MatCardHeader, MatCardAvatar, MatCardContent  } from '@angular/material';
+import { MatDialogRef, MatDialogModule, MatDialog, MatCardModule, MatButtonModule } from '@angular/material';
 
 @Component({
   selector: 'app-job-details',
@@ -7,21 +7,9 @@ import { MatDialogRef, MatDialogModule, MatDialog, MatCard, MatCardActions,MatCa
   styleUrls: ['./job-details.component.css']
 })
 export class JobDetailsComponent implements OnInit {
-  jobName: string
-  companyName:string
-  jobDescription:string
-   salary: number
-   experience: string
-   jobType: string
-   datePosted: string // TEMPORARY: HTML WILL CONTAIN {{datePosted | date:"MM/dd/yyyy"}}
-   listOfApplicants: string[]
-   apply:boolean
-   create:string
-  update: string
   
-  constructor(
-    public dialog: MatDialog
-  ) { }
+  
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
