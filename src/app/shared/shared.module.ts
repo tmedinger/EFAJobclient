@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ReactiveFormsModule } from '../../../node_modules/@angular/forms';
-import { JobDetailsComponent } from './job-details/job-details.component';
+import { JobDetailsComponent, ApplyConfirmAlert } from './job-details/job-details.component';
 import { 
         MatButtonModule,
         MatCardModule,
@@ -24,10 +24,10 @@ import {
         MatToolbarModule,
         MatTooltipModule, 
         MatSnackBarModule,} from "@angular/material";
-import {MatFormFieldModule } from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
         
-import {FormBuilder, FormGroup} from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { EmployerLoginComponent } from '../auth/employer-login/employer-login.component';
 import { StudentLoginComponent } from '../auth/student-login/student-login.component';
@@ -89,6 +89,7 @@ import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs
     StudentLoginComponent,
     EmployerLoginComponent,
     JobDetailsComponent,
+    ApplyConfirmAlert,
  
   ],
   declarations: [
@@ -100,9 +101,10 @@ import { JobsEditComponent } from '../employer/employer-dashboard/jobs-edit/jobs
     EmployerLoginComponent,
     SnippetPipe,
     JobsEditComponent,
+    ApplyConfirmAlert,
     
   ],
 
-  entryComponents: []
+  entryComponents: [ApplyConfirmAlert]
 })
 export class SharedModule { }
