@@ -13,6 +13,7 @@ import { JobsAppliedComponent } from './profile/jobs-applied/jobs-applied.compon
 import { ProfileComponent } from './profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { MatPaginatorModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     ReactiveFormsModule,
     MatExpansionModule,
-    FormsModule
+    FormsModule,
+    MatPaginatorModule,
   ],
   declarations: [ 
     StudentDashboardComponent,
