@@ -82,7 +82,6 @@ import { StudentSignupComponent } from '../auth/student-signup/student-signup.co
   declarations: [ 
     ApplyConfirmAlert,
     JobDetailsComponent,
-    ApplyConfirmAlert,
     
   ],
 

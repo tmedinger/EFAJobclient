@@ -22,6 +22,7 @@ export class JobDetailsComponent implements OnInit {
     });
   }
 
+// function to open snackbar notification for employer that job has been applied to once student hits apply button.  Was not finished implementing.  Function needs to be called here when student clicks apply button, but snackbar needs to show on employer dashboard.  Function may need to  be moved to employer dashboard component, don't know, didn't get that far before project was pulled.
   openSnackBar(message: string) {
     this.snackBar.open("New application submitted to posted job.", "", {
       duration: 3000, verticalPosition: "top"
