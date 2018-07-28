@@ -1,3 +1,8 @@
+
+<app-student-notifications></app-student-notifications>
+<div class="jobs-cards">
+
+
 <mat-card id="jobCard">
     <mat-card-header>
         <mat-card-title><h2 routerLink="/jobdetails">Job Name: Test Name</h2></mat-card-title>
@@ -17,3 +22,9 @@
         <button mat-raised-button routerLink="/jobdetails">Job Details</button>
     </mat-card-actions>
 </mat-card>
+<mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              class="pagination-student">
+</mat-paginator>
+</div>
